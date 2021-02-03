@@ -1,0 +1,74 @@
+﻿// set default colour theme
+$primary: #00997B;
+$secondary: #003D90;
+$light: #F4F6F5;
+$dark: #C0C2C1;
+$body: #3E3E3E; 
+
+// overwrite element default colours
+$navbar-light-color: $body;
+$navbar-light-hover-color: $primary;
+
+// import bootstrap scss
+@import "../bootstrap/scss/bootstrap";
+
+// custom classes for fine adjustments
+body {
+    font-family: Arial;
+}
+.mask {
+    background-image: linear-gradient(to right, rgba($secondary,0.5), rgba($primary, 0.2), rgba($secondary,0.2));
+}
+.react-datepicker-wrapper {
+position: relative;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+width: 1%;
+min-width: 0;
+margin-bottom: 0;
+}
+.form-control {
+    border-left: 0px solid white; 
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.input-group-text {
+    background-color: unset;
+}
+
+.cs-navbar-link:first-child {
+    border-bottom: 2px solid $white;
+}
+.cs-navbar-link:hover:first-child {
+    border-bottom: 2px solid $navbar-light-hover-color;
+}
+.cs-bg {
+    background: url(../background.jpg) center no-repeat;
+    background-size: cover;
+    background-position: left;
+
+}
+.cs-btn {
+    width: 175px;
+    border-bottom-right-radius: 20px;
+    border-width: 3px;
+}
+.cs-icon-arrow {
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+.cs-btn-text {
+    position: relative;
+    top: -2px;
+}
+.cs-big-num {
+    font-size: 76px;
+}
+.cs-wide-space {
+    letter-spacing: 2px;
+}
+.cs-paper {
+    background: linear-gradient(225deg,rgb(255,255,255,1), rgb(255,255,255,1) 30px,$secondary 30px);
+    border: none;
+}
